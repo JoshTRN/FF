@@ -215,7 +215,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <img style="max-width: 100%" id="photo" src="" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -265,7 +265,7 @@
             $.post('http://localhost:3000/api/friends', userData, function (data) {
 
                 $('#matchName').text(data.name);
-                $('.modal-body').attr('src', data.photo)
+                $('#photo').attr('src', data.photo)
                 $('#friendModal').modal('toggle');
                 alert('clicked');
             })
