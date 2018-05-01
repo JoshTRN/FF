@@ -264,7 +264,7 @@
 
             var currentURL = window.location.origin;
 
-            $.post(currentURL + "/api/friends', userData, function (data) {
+            $.post(currentURL + '/api/friends', userData, function (data) {
 
                 $('#matchName').text(data.name);
                 $('#photo').attr('src', data.photo)
